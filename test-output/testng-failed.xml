@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="5" name="Failed suite [Tests]">
-  <test name="Test1(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.learning.selenium.SampleTestNgTest">
+      <class name="com.learning.selenium.HelloWorldTest">
         <methods>
-          <include name="initWebDriver"/>
-          <include name="tearDown"/>
-          <include name="initTestSuite"/>
-          <include name="testHomePageHasAHeader"/>
+          <include name="initalize"/>
+          <include name="googleHelloWorldTest"/>
         </methods>
-      </class> <!-- com.learning.selenium.SampleTestNgTest -->
+      </class> <!-- com.learning.selenium.HelloWorldTest -->
     </classes>
-  </test> <!-- Test1(failed) -->
-</suite> <!-- Failed suite [Tests] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

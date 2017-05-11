@@ -9,7 +9,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
-import ru.stqa.selenium.factory.WebDriverPool;
+//import ru.stqa.selenium.factory.WebDriverPool;
 
 import com.learning.selenium.util.PropertyLoader;
 
@@ -36,11 +36,11 @@ public class TestNgTestBase {
 
   @BeforeMethod
   public void initWebDriver() {
-    driver = WebDriverPool.DEFAULT.getDriver(gridHubUrl, capabilities);
+//    driver = WebDriverPool.DEFAULT.getDriver(gridHubUrl, capabilities);
   }
 
   @AfterSuite(alwaysRun = true)
   public void tearDown() {
-    WebDriverPool.DEFAULT.dismissAll();
+//    WebDriverPool.DEFAULT.dismissAll();
   }
 }
